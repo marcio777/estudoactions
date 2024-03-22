@@ -48,7 +48,7 @@ jobs:
     environment:
       name: prd
       url: 'www.terra.com.br'
-    needs: deploy-hml
+    needs: deploy-preprd
     steps:
       - name: Run a one-line script
         run: echo deploy prd!
