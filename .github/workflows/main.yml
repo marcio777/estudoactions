@@ -30,6 +30,19 @@ jobs:
       - name: Run a one-line script
         run: echo deploy hml!
 
+  
+  deploy-preprd:
+    runs-on: ubuntu-latest
+    environment:
+      name: preprd
+      url: https://www.uol.com.br'
+    needs: deploy-hml
+    steps:
+      - name: Run a one-line script
+        run: echo deploy preprd!
+  
+  
+  
   deploy-prd:
     runs-on: ubuntu-latest
     environment:
