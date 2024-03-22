@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: dev
-      url: 'marcio.com.br'
+      url: 'www.google.com'
     needs: build
     steps:
       - name: Run a one-line script
@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: hml
-      url: 'marcio.com.br'
+      url: 'www.uol.com.br'
     needs: deploy-dev
     steps:
       - name: Run a one-line script
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: prd
-      url: 'marcio.com.br'
+      url: 'www.terra.com.br'
     needs: deploy-hml
     steps:
       - name: Run a one-line script
